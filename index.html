@@ -3,211 +3,303 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="BarberFlow: sistema para barbearias com agenda online, WhatsApp automático, comandas, PDV, estoque, CRM e acompanhamento do cliente." />
-  <title>BarberFlow — O SaaS que atende, agenda e organiza sua barbearia</title>
+  <meta name="theme-color" content="#0a0c0f" />
+  <meta name="description" content="EliteFlow: gestão inteligente para barbearias com agenda, WhatsApp, pagamentos, CRM, marketing, comandas, PDV, estoque, financeiro e equipe em uma única plataforma." />
+  <meta property="og:title" content="EliteFlow — Gestão de Barbearia" />
+  <meta property="og:description" content="Atenda, agende, receba e faça seus clientes voltarem. Tudo em uma única plataforma." />
+  <meta property="og:type" content="website" />
+  <title>EliteFlow — Gestão inteligente para barbearias</title>
+  <link rel="icon" href="favicon.ico" />
   <link rel="stylesheet" href="css/styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"SoftwareApplication",
+    "name":"EliteFlow",
+    "applicationCategory":"BusinessApplication",
+    "operatingSystem":"Web",
+    "description":"Sistema de gestão para barbearias com agenda, WhatsApp, pagamentos, CRM, marketing, financeiro, comandas, PDV e estoque.",
+    "offers":{"@type":"AggregateOffer","lowPrice":"69.90","highPrice":"199.90","priceCurrency":"BRL"}
+  }
+  </script>
 </head>
 <body>
   <header class="site-header" id="topo">
-    <nav class="nav container">
-      <a class="brand" href="#topo" aria-label="BarberFlow início">
-        <span class="brand-mark">BF</span>
-        <span>Barber<span>Flow</span></span>
+    <nav class="nav container" aria-label="Navegação principal">
+      <a class="brand" href="#topo" aria-label="EliteFlow início">
+        <img src="assets/eliteflow.svg" alt="" />
+        <span>Elite<span>Flow</span></span>
       </a>
-      <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+      <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false" data-menu-toggle>
+        <span></span><span></span><span></span>
+      </button>
       <div class="nav-links" data-nav>
         <a href="#como-funciona">Como funciona</a>
         <a href="#recursos">Recursos</a>
         <a href="#planos">Planos</a>
         <a href="#faq">Dúvidas</a>
-        <a class="btn btn-small" data-whatsapp href="#">Quero uma demonstração</a>
+        <a class="btn btn-small" data-signup href="#">Começar grátis</a>
       </div>
     </nav>
   </header>
 
   <main>
     <section class="hero section">
+      <div class="hero-glow hero-glow-a"></div>
+      <div class="hero-glow hero-glow-b"></div>
       <div class="container hero-grid">
-        <div class="hero-copy">
-          <span class="eyebrow">Agenda + WhatsApp + Gestão em um só lugar</span>
-          <h1>O sistema que administra sua barbearia e atende seus clientes pelo WhatsApp.</h1>
-          <p class="hero-lead">O BarberFlow agenda, confirma, organiza comandas, controla estoque, acompanha clientes e ajuda sua barbearia a vender mais sem virar refém de planilhas.</p>
+        <div class="hero-copy reveal">
+          <div class="eyebrow-row">
+            <span class="eyebrow">Gestão inteligente para barbearias</span>
+            <span class="version-pill">EliteFlow 4.5</span>
+          </div>
+          <h1>Atenda, agende, receba e faça seu cliente <em>voltar.</em></h1>
+          <p class="hero-lead">O EliteFlow conecta agenda, WhatsApp, pagamentos, comandas, PDV, estoque, CRM, marketing, equipe e financeiro para sua barbearia crescer sem depender de planilhas e mensagens soltas.</p>
           <div class="hero-actions">
-            <a class="btn" data-whatsapp href="#">Agendar demonstração</a>
-            <a class="btn btn-ghost" href="#demo">Ver demonstração</a>
+            <a class="btn btn-large" data-signup href="#">Começar 7 dias grátis <span>→</span></a>
+            <a class="btn btn-ghost btn-large" href="#demo">Ver o sistema</a>
           </div>
           <div class="trust-row">
-            <span>✓ Trial Premium de 7 dias</span>
-            <span>✓ Sem cartão no teste</span>
-            <span>✓ Implantação guiada</span>
+            <span><i>✓</i> Premium por 7 dias</span>
+            <span><i>✓</i> Sem cartão no teste</span>
+            <span><i>✓</i> Funciona no celular e desktop</span>
           </div>
         </div>
-        <div class="hero-visual" id="demo" aria-label="Demonstração visual do BarberFlow">
+
+        <div class="hero-visual reveal delay-1" id="demo" aria-label="Demonstração visual do EliteFlow">
+          <div class="visual-orbit orbit-one"></div>
+          <div class="visual-orbit orbit-two"></div>
+          <div class="dashboard-window">
+            <div class="window-top">
+              <div class="window-dots"><i></i><i></i><i></i></div>
+              <span>EliteFlow • Visão geral</span>
+              <b>Hoje</b>
+            </div>
+            <div class="dash-shell">
+              <aside class="dash-sidebar">
+                <div class="mini-brand"><img src="assets/eliteflow.svg" alt="" /><strong>EliteFlow</strong></div>
+                <span class="active">Visão geral</span><span>Agenda</span><span>Clientes</span><span>Financeiro</span><span>Automações</span>
+              </aside>
+              <div class="dash-main">
+                <div class="dash-heading"><div><small>Bom dia 👋</small><strong>Sua barbearia em um olhar.</strong></div><div class="owner-dot">MS</div></div>
+                <div class="metric-grid">
+                  <article><small>Faturamento hoje</small><strong>R$ 1.460</strong><em>+18%</em></article>
+                  <article><small>Agendamentos</small><strong>18</strong><em>87% ocupado</em></article>
+                  <article><small>Ticket médio</small><strong>R$ 58,40</strong><em>+R$ 4,20</em></article>
+                </div>
+                <div class="chart-card">
+                  <div class="chart-head"><span>Faturamento da semana</span><strong>R$ 6.840</strong></div>
+                  <div class="bars"><i style="height:38%"></i><i style="height:58%"></i><i style="height:46%"></i><i style="height:72%"></i><i style="height:64%"></i><i style="height:88%"></i><i style="height:78%"></i></div>
+                </div>
+                <div class="agenda-mini">
+                  <div><b>14:30</b><span><strong>Marciel</strong><small>Corte + barba</small></span><em>Confirmado</em></div>
+                  <div><b>15:00</b><span><strong>Lucas</strong><small>Corte degradê</small></span><em>WhatsApp</em></div>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="phone-card">
             <div class="phone-top"><span></span><strong>WhatsApp</strong><small>online</small></div>
             <div class="chat">
-              <p class="msg client">Oi, quero cortar hoje</p>
-              <p class="msg bot">Olá! 👋 Sou o assistente da Barbearia. Qual serviço você deseja?</p>
-              <p class="msg client">Corte + barba</p>
-              <p class="msg bot">Tenho hoje às 14:30 com Carlos. Posso confirmar?</p>
-              <p class="msg client">Pode</p>
-              <p class="msg bot success">Agendamento confirmado ✅<br><strong>Código: A1B2-C3D4-E5F6</strong></p>
+              <p class="msg client">Tem horário hoje?</p>
+              <p class="msg bot">Tenho 14:30 e 16:00 com Carlos. Qual prefere?</p>
+              <p class="msg client">14:30</p>
+              <p class="msg bot success">Confirmado ✅<br><strong>Código: A1B2-C3D4</strong></p>
             </div>
           </div>
-          <div class="dashboard-card">
-            <div class="dash-header">
-              <div><small>Hoje na barbearia</small><strong>18 agendamentos</strong></div>
-              <span class="status-pill">87% ocupação</span>
-            </div>
-            <div class="metric-grid">
-              <div><small>Receita prevista</small><strong>R$ 1.460</strong></div>
-              <div><small>Ticket médio</small><strong>R$ 58,40</strong></div>
-              <div><small>Comandas abertas</small><strong>4</strong></div>
-              <div><small>Clientes recuperados</small><strong>7</strong></div>
-            </div>
-            <div class="agenda-mini">
-              <span>14:30</span><strong>Marciel</strong><em>Corte + Barba</em><b>WhatsApp</b>
-              <span>15:00</span><strong>Lucas</strong><em>Corte</em><b>Confirmado</b>
-              <span>15:30</span><strong>Pedro</strong><em>Barba</em><b>Em atendimento</b>
-            </div>
-          </div>
+          <div class="floating-chip"><span>✓</span><div><small>Pix confirmado</small><strong>Agendamento criado</strong></div></div>
         </div>
       </div>
     </section>
 
-    <section class="section problem">
-      <div class="container split">
-        <div>
-          <span class="eyebrow dark">O problema</span>
-          <h2>Barbearia perde dinheiro quando atendimento, agenda e caixa ficam separados.</h2>
+    <section class="proof-strip">
+      <div class="container proof-grid">
+        <span>Agenda inteligente</span><i></i><span>WhatsApp automatizado</span><i></i><span>Pix & Mercado Pago</span><i></i><span>CRM & Marketing</span><i></i><span>Financeiro & BI</span>
+      </div>
+    </section>
+
+    <section class="section problem-section">
+      <div class="container split problem-wrap">
+        <div class="section-copy reveal">
+          <span class="eyebrow">O problema não é falta de cliente</span>
+          <h2>É perder tempo e dinheiro porque tudo está separado.</h2>
+          <p>Quando WhatsApp, agenda, caixa, estoque e clientes não conversam entre si, a operação depende da memória da equipe — e o dono descobre os problemas tarde demais.</p>
         </div>
-        <div class="pain-grid">
-          <article><strong>Clientes esquecem horário</strong><p>Sem confirmação e lembretes, aumenta o no-show.</p></article>
-          <article><strong>WhatsApp toma tempo</strong><p>O dono ou recepção passa o dia respondendo perguntas repetidas.</p></article>
-          <article><strong>Comanda vira confusão</strong><p>Serviços, produtos e comissão acabam espalhados.</p></article>
-          <article><strong>Cliente some</strong><p>Sem CRM e marketing, ninguém chama o cliente na hora certa.</p></article>
+        <div class="pain-grid reveal delay-1">
+          <article><span>01</span><strong>WhatsApp ocupa a recepção</strong><p>Perguntas repetidas, horários soltos e confirmação manual.</p></article>
+          <article><span>02</span><strong>Faltas viram prejuízo</strong><p>Sem lembrete, acompanhamento e organização da agenda.</p></article>
+          <article><span>03</span><strong>Caixa dá retrabalho</strong><p>Serviço, produto, pagamento, comissão e estoque em lugares diferentes.</p></article>
+          <article><span>04</span><strong>Cliente some depois do corte</strong><p>Sem CRM e campanhas, ninguém chama no momento certo.</p></article>
         </div>
       </div>
     </section>
 
-    <section class="section" id="como-funciona">
+    <section class="section flow-section" id="como-funciona">
       <div class="container">
-        <div class="section-head center">
-          <span class="eyebrow">Como funciona</span>
-          <h2>Do primeiro “oi” até o pagamento final.</h2>
-          <p>Uma experiência conectada para o cliente, para o barbeiro e para o dono.</p>
+        <div class="section-head center reveal">
+          <span class="eyebrow">Uma operação conectada</span>
+          <h2>Do primeiro “oi” até o cliente voltar.</h2>
+          <p>O EliteFlow organiza cada etapa sem obrigar sua equipe a trabalhar em cinco ferramentas diferentes.</p>
         </div>
-        <div class="flow-steps">
-          <div><span>1</span><strong>Cliente chama no WhatsApp</strong><p>O assistente responde e entende o pedido.</p></div>
-          <div><span>2</span><strong>Agenda automaticamente</strong><p>Consulta serviços, barbeiros e horários livres.</p></div>
-          <div><span>3</span><strong>Envia código de acompanhamento</strong><p>Cliente acompanha pela página pública ou pelo WhatsApp.</p></div>
-          <div><span>4</span><strong>Atendimento vira comanda</strong><p>Serviços, produtos, estoque, pagamento e comissão integrados.</p></div>
+        <div class="flow-line reveal delay-1">
+          <article><span>1</span><b>Cliente chama</b><p>WhatsApp ou página pública.</p></article>
+          <article><span>2</span><b>Agenda consulta</b><p>Serviço, barbeiro, expediente e almoço.</p></article>
+          <article><span>3</span><b>Pagamento</b><p>Pix manual ou online, conforme sua operação.</p></article>
+          <article><span>4</span><b>Confirmação</b><p>Código e acompanhamento automático.</p></article>
+          <article><span>5</span><b>Atendimento</b><p>Comanda, produtos e comissão.</p></article>
+          <article><span>6</span><b>Relacionamento</b><p>CRM, fidelidade e marketing.</p></article>
         </div>
       </div>
     </section>
 
     <section class="section slider-section" id="recursos">
       <div class="container">
-        <div class="section-head">
-          <span class="eyebrow">Demonstração</span>
-          <h2>Um sistema completo sem parecer complicado.</h2>
-          <p>Use o slider para apresentar os principais diferenciais do BarberFlow.</p>
+        <div class="section-head reveal">
+          <span class="eyebrow">Veja o EliteFlow trabalhando</span>
+          <h2>Mais completo. Mais simples de operar.</h2>
+          <p>Navegue pelos principais fluxos do sistema atual.</p>
         </div>
-        <div class="product-slider" data-slider>
+        <div class="product-slider reveal delay-1" data-slider>
           <button class="slider-btn prev" aria-label="Slide anterior">‹</button>
           <div class="slides">
             <article class="slide active">
-              <div class="slide-copy"><span>WhatsApp & IA</span><h3>O cliente agenda conversando.</h3><p>O BarberFlow responde, mostra serviços, horários e confirma o agendamento automaticamente.</p></div>
-              <div class="screen mock-whatsapp"><p class="msg client">Tem horário hoje?</p><p class="msg bot">Tenho 14:30 e 16:00 com Carlos. Qual prefere?</p><p class="msg client">14:30</p><p class="msg bot success">Confirmado ✅ Código A1B2-C3D4-E5F6</p></div>
+              <div class="slide-copy"><span>WhatsApp & automações</span><h3>O cliente agenda conversando.</h3><p>Fluxos configuráveis consultam serviços, profissionais e disponibilidade real. O intervalo de almoço do barbeiro também é respeitado.</p><ul><li>Meta, 360dialog, Twilio ou Evolution</li><li>Fluxos editáveis por barbearia</li><li>Acompanhamento e confirmações</li></ul></div>
+              <div class="screen whatsapp-screen"><header><strong>WhatsApp</strong><small>Elite Barber</small></header><p class="msg client">Tem corte às 12:30?</p><p class="msg bot">Carlos está em intervalo nesse horário. Tenho 11:00 ou 13:00. Qual prefere?</p><p class="msg client">13:00</p><p class="msg bot success">Perfeito! Horário reservado ✅</p></div>
             </article>
             <article class="slide">
-              <div class="slide-copy"><span>Agenda visual</span><h3>Agenda por barbeiro, com status e WhatsApp rápido.</h3><p>A equipe enxerga o dia com clareza e fala com o cliente em um clique.</p></div>
-              <div class="screen agenda-screen"><div class="calendar-row header"><b>Hora</b><b>Carlos</b><b>João</b><b>Pedro</b></div><div class="calendar-row"><span>09:00</span><em>Corte<br>Marciel</em><i></i><em>Barba<br>Lucas</em></div><div class="calendar-row"><span>10:00</span><i></i><em>Corte + Barba<br>André</em><i></i></div><div class="calendar-row"><span>11:00</span><em>Confirmado<br>Rafael</em><i></i><em>Atendimento<br>Caio</em></div></div>
+              <div class="slide-copy"><span>Agenda inteligente</span><h3>O dia inteiro em poucos segundos.</h3><p>Agenda por profissional, status, contato rápido e bloqueio automático de horários fora do expediente ou durante o almoço.</p><ul><li>Cards otimizados para mobile</li><li>WhatsApp direto do agendamento</li><li>Expediente por dia e por barbeiro</li></ul></div>
+              <div class="screen agenda-screen"><div class="agenda-toolbar"><b>Terça, 01 set</b><span>Hoje</span></div><div class="agenda-item"><time>09:00</time><div><strong>Rafael</strong><small>Corte • Carlos</small></div><em>Confirmado</em></div><div class="agenda-item lunch"><time>12:00</time><div><strong>Intervalo</strong><small>Almoço • Carlos</small></div><em>Bloqueado</em></div><div class="agenda-item"><time>13:00</time><div><strong>Lucas</strong><small>Barba • Carlos</small></div><em>Agendado</em></div></div>
             </article>
             <article class="slide">
-              <div class="slide-copy"><span>Comandas & PDV</span><h3>O atendimento vira venda, comissão e estoque.</h3><p>Adicione serviços e produtos, feche a comanda e controle tudo em um fluxo.</p></div>
-              <div class="screen pdv-screen"><h4>Comanda #142</h4><div><span>Corte + Barba</span><strong>R$ 70</strong></div><div><span>Pomada modeladora</span><strong>R$ 35</strong></div><div><span>Desconto</span><strong>- R$ 5</strong></div><footer><span>Total</span><strong>R$ 100</strong></footer></div>
+              <div class="slide-copy"><span>Pagamentos</span><h3>Receba sem travar a operação.</h3><p>Pix manual com aprovação rápida no painel e pagamentos online por Mercado Pago, mantendo a agenda sincronizada com o recebimento.</p><ul><li>Pix manual em um clique</li><li>Confirmação automática no WhatsApp</li><li>Checkout oficial para cartão</li></ul></div>
+              <div class="screen payment-screen"><div class="payment-title"><span>Pix aguardando aprovação</span><b>3</b></div><div class="pix-row"><div><strong>Marcos Silva</strong><small>Corte + barba • 14:30</small></div><span>R$ 70,00</span><button>Confirmar Pix</button></div><div class="payment-ok">✓ Pagamento confirmado. Cliente avisado no WhatsApp.</div></div>
             </article>
             <article class="slide">
-              <div class="slide-copy"><span>CRM & Marketing</span><h3>Chame o cliente na hora certa.</h3><p>Detecte inativos, aniversariantes, clientes VIP e horários vagos para vender mais.</p></div>
-              <div class="screen crm-screen"><div><strong>VIP</strong><span>12 clientes</span></div><div><strong>Risco de abandono</strong><span>8 clientes</span></div><div><strong>Momento de retorno</strong><span>23 clientes</span></div><button>Enviar campanha pelo WhatsApp</button></div>
+              <div class="slide-copy"><span>Clientes & CRM</span><h3>Saiba quem voltar a chamar.</h3><p>Histórico, gasto, visitas e segmentação ajudam a transformar dados reais da operação em relacionamento.</p><ul><li>VIP, retorno e risco de abandono</li><li>Fidelidade, pacotes e clube</li><li>Campanhas e marketing inteligente</li></ul></div>
+              <div class="screen crm-screen"><div class="crm-top"><strong>Clientes</strong><span>1.284 cadastrados</span></div><div class="crm-card vip"><i>VIP</i><b>48 clientes</b><small>Alto valor</small></div><div class="crm-card"><i>RETORNO</i><b>73 clientes</b><small>Hora do próximo corte</small></div><div class="crm-card risk"><i>RISCO</i><b>21 clientes</b><small>Sem visita recente</small></div></div>
             </article>
             <article class="slide">
-              <div class="slide-copy"><span>Gestão</span><h3>Dashboard que mostra o que importa.</h3><p>Receita prevista, ocupação, ticket médio, MRR do clube, desempenho da equipe e estoque.</p></div>
-              <div class="screen bi-screen"><div class="bar h90"></div><div class="bar h65"></div><div class="bar h75"></div><div class="bar h55"></div><div class="bar h85"></div><section><strong>R$ 18.420</strong><span>Receita do mês</span></section></div>
+              <div class="slide-copy"><span>Comandas, PDV & estoque</span><h3>Atendimento vira caixa sem retrabalho.</h3><p>Serviços e produtos entram na mesma comanda; o fechamento alimenta financeiro, comissão e estoque.</p><ul><li>Produtos e estoque</li><li>Comissões por barbeiro</li><li>Histórico de recebimentos</li></ul></div>
+              <div class="screen pdv-screen"><header><div><small>Comanda</small><strong>#0142</strong></div><span>Em atendimento</span></header><div><span>Corte + barba</span><strong>R$ 70,00</strong></div><div><span>Pomada modeladora</span><strong>R$ 35,00</strong></div><div><span>Desconto</span><strong>- R$ 5,00</strong></div><footer><span>Total</span><strong>R$ 100,00</strong></footer></div>
+            </article>
+            <article class="slide">
+              <div class="slide-copy"><span>Financeiro & BI</span><h3>Decida olhando números, não sensação.</h3><p>Dashboard, gráficos, metas e relatórios mostram faturamento e desempenho da equipe de forma prática.</p><ul><li>Visão diária, semanal, mensal e anual</li><li>Ranking e metas por profissional</li><li>BI avançado no Premium</li></ul></div>
+              <div class="screen bi-screen"><div class="bi-metrics"><div><small>Receita mês</small><strong>R$ 28.940</strong></div><div><small>Ticket médio</small><strong>R$ 64,20</strong></div></div><div class="bi-bars"><i style="height:42%"></i><i style="height:61%"></i><i style="height:54%"></i><i style="height:76%"></i><i style="height:68%"></i><i style="height:90%"></i><i style="height:82%"></i></div></div>
+            </article>
+            <article class="slide">
+              <div class="slide-copy"><span>Equipe, segurança & visual</span><h3>Cada pessoa vê o que precisa.</h3><p>Perfis de acesso, 2FA, ações sensíveis protegidas e uma interface responsiva com modos Claro, Escuro e Sistema.</p><ul><li>Dono, gerente, recepção e barbeiro</li><li>2FA por aplicativo autenticador</li><li>Design mobile e desktop</li></ul></div>
+              <div class="screen theme-screen"><div class="theme-nav"><b>EliteFlow</b><span class="active">Dashboard</span><span>Agenda</span><span>Clientes</span></div><div class="theme-content"><div class="theme-toggle"><button>☀ Claro</button><button class="selected">◐ Sistema</button><button>☾ Escuro</button></div><div class="security-card"><span>✓</span><div><strong>Conta protegida</strong><small>2FA ativo • sessão segura</small></div></div><div class="role-row"><span>Dono</span><span>Gerente</span><span>Recepção</span><span>Barbeiro</span></div></div></div>
             </article>
           </div>
           <button class="slider-btn next" aria-label="Próximo slide">›</button>
-          <div class="slider-dots" data-dots aria-label="Navegação do slider"></div>
+          <div class="slider-footer"><div class="slider-dots" data-dots aria-label="Navegação do slider"></div><span data-slide-counter>01 / 07</span></div>
         </div>
       </div>
     </section>
 
-    <section class="section resources">
+    <section class="section new-section">
       <div class="container">
-        <div class="section-head center"><span class="eyebrow">Tudo em um só sistema</span><h2>O BarberFlow cobre a rotina inteira da barbearia.</h2></div>
-        <div class="features-grid">
-          <article><span class="icon">▣</span><h3>Agenda online</h3><p>Serviços, horários, barbeiros, confirmação e acompanhamento.</p></article>
-          <article><span class="icon">◉</span><h3>WhatsApp automático</h3><p>Atendimento, agendamento, lembrete, acompanhamento e recuperação.</p></article>
-          <article><span class="icon">◫</span><h3>Comandas & PDV</h3><p>Do atendimento ao pagamento com estoque e comissão integrados.</p></article>
-          <article><span class="icon">◎</span><h3>CRM avançado</h3><p>Clientes VIP, inativos, risco de abandono, tags e histórico.</p></article>
-          <article><span class="icon">◇</span><h3>Marketing</h3><p>Campanhas para aniversariantes, horários vagos e retorno provável.</p></article>
-          <article><span class="icon">▥</span><h3>BI gerencial</h3><p>Receita, ocupação, ticket médio, equipe, estoque e crescimento.</p></article>
+        <div class="section-head center reveal"><span class="eyebrow">Tudo em uma única plataforma</span><h2>A rotina da barbearia, conectada de ponta a ponta.</h2></div>
+        <div class="features-grid reveal delay-1">
+          <article><span>01</span><h3>Agenda & página pública</h3><p>Horários, profissionais, serviços, códigos de acompanhamento e agendamento online.</p></article>
+          <article><span>02</span><h3>WhatsApp & automações</h3><p>Fluxos configuráveis, múltiplos provedores, confirmação e acompanhamento do cliente.</p></article>
+          <article><span>03</span><h3>Pagamentos</h3><p>Pix manual, Mercado Pago, checkout de cartão e confirmação ligada à reserva.</p></article>
+          <article><span>04</span><h3>Comandas & PDV</h3><p>Serviços, produtos, descontos, recebimentos, comissão e estoque no mesmo fluxo.</p></article>
+          <article><span>05</span><h3>CRM</h3><p>Histórico, visitas, gastos, clientes VIP, retorno provável e risco de abandono.</p></article>
+          <article><span>06</span><h3>Marketing inteligente</h3><p>Campanhas, aniversariantes, horários vagos, fidelidade, pacotes e clube.</p></article>
+          <article><span>07</span><h3>Financeiro</h3><p>Faturamento, gráficos, metas, ranking de barbeiros e visão gerencial.</p></article>
+          <article><span>08</span><h3>Equipe & permissões</h3><p>Acessos separados para dono, gerente, recepção e barbeiro.</p></article>
+          <article><span>09</span><h3>Horários profissionais</h3><p>Expediente e intervalo de almoço configuráveis por barbeiro e por dia.</p></article>
+          <article><span>10</span><h3>Segurança</h3><p>2FA, isolamento por barbearia, validações de pagamento e auditoria de ações críticas.</p></article>
+          <article><span>11</span><h3>Design responsivo</h3><p>Cards e navegação pensados para celular sem sacrificar a operação no desktop.</p></article>
+          <article><span>12</span><h3>Claro, Escuro ou Sistema</h3><p>A interface acompanha a preferência de cada usuário e dispositivo.</p></article>
         </div>
       </div>
     </section>
 
-    <section class="section offer">
-      <div class="container offer-card">
-        <div>
-          <span class="eyebrow">Oferta Fundadores</span>
-          <h2>Entre agora com condição especial para os primeiros clientes.</h2>
-          <p>Para validar com barbearias reais, os primeiros clientes podem entrar no Pro por <strong>R$ 89,90/mês enquanto mantiverem a assinatura ativa</strong>.</p>
+    <section class="section role-section">
+      <div class="container role-grid">
+        <div class="section-copy reveal"><span class="eyebrow">Feito para a equipe inteira</span><h2>Mais controle para o dono. Menos complexidade para quem opera.</h2><p>O EliteFlow adapta a experiência conforme o perfil. Cada pessoa acessa apenas o necessário para executar seu trabalho.</p><div class="role-tabs" data-role-tabs><button class="active" data-role="dono">Dono</button><button data-role="gerente">Gerente</button><button data-role="recepcao">Recepção</button><button data-role="barbeiro">Barbeiro</button></div></div>
+        <div class="role-panel reveal delay-1" data-role-panel>
+          <span class="role-icon">◆</span><small>PERFIL DONO</small><h3>Visão completa da operação.</h3><p>Dashboard, faturamento, metas, equipe, pagamentos, marketing, configurações e segurança em uma única visão.</p><ul><li>Indicadores e financeiro</li><li>Gestão da equipe</li><li>Configurações e automações</li><li>Segurança da conta</li></ul>
         </div>
-        <a class="btn" data-whatsapp href="#">Quero ser fundador</a>
+      </div>
+    </section>
+
+    <section class="section security-section">
+      <div class="container security-wrap reveal">
+        <div><span class="eyebrow">Operação profissional</span><h2>Segurança não é um detalhe escondido no rodapé.</h2><p>O EliteFlow foi estruturado para separar dados entre barbearias, proteger ações sensíveis e registrar operações importantes.</p></div>
+        <div class="security-grid"><article><span>2FA</span><strong>Autenticação em duas etapas</strong></article><article><span>↔</span><strong>Isolamento multiempresa</strong></article><article><span>✓</span><strong>Webhooks e pagamentos validados</strong></article><article><span>◎</span><strong>Auditoria de ações críticas</strong></article></div>
       </div>
     </section>
 
     <section class="section pricing" id="planos">
       <div class="container">
-        <div class="section-head center"><span class="eyebrow">Planos</span><h2>Escolha o plano ideal para a sua barbearia.</h2><p>7 dias de Premium para testar tudo.</p></div>
-        <div class="pricing-grid">
-          <article class="price-card"><h3>Starter</h3><p>Para barbearias pequenas começarem com controle profissional.</p><strong>R$ 69,90<span>/mês</span></strong><small>ou R$ 699/ano</small><ul><li>Até 2 profissionais</li><li>Agenda e página pública</li><li>PDV, comandas e estoque</li><li>Financeiro e comissões</li></ul><a class="btn btn-ghost" data-whatsapp href="#">Começar Starter</a></article>
-          <article class="price-card featured"><div class="badge">Mais vendido</div><h3>Pro</h3><p>Para quem quer crescer com WhatsApp, CRM e automação.</p><strong>R$ 119,90<span>/mês</span></strong><small>ou R$ 1.199/ano</small><ul><li>Até 5 profissionais</li><li>Tudo do Starter</li><li>WhatsApp automático</li><li>CRM, marketing e fila de espera</li><li>Clube, fidelidade e pacotes</li></ul><a class="btn" data-whatsapp href="#">Quero o Pro</a></article>
-          <article class="price-card"><h3>Premium</h3><p>Para operação avançada com IA, BI e recursos premium.</p><strong>R$ 199,90<span>/mês</span></strong><small>ou R$ 1.999/ano</small><ul><li>Até 10 profissionais</li><li>Tudo do Pro</li><li>IA no WhatsApp</li><li>BI avançado</li><li>NFS-e preparada</li></ul><a class="btn btn-ghost" data-whatsapp href="#">Conhecer Premium</a></article>
+        <div class="section-head center reveal"><span class="eyebrow">Planos transparentes</span><h2>Comece no tamanho certo. Evolua quando precisar.</h2><p>Todos começam com 7 dias de Premium para testar a experiência completa.</p></div>
+        <div class="billing-toggle reveal" role="group" aria-label="Ciclo de cobrança"><button class="active" data-cycle="monthly">Mensal</button><button data-cycle="annual">Anual <span>2 meses grátis</span></button></div>
+        <div class="pricing-grid reveal delay-1">
+          <article class="price-card">
+            <div class="price-head"><span>ESSENCIAL</span><h3>Starter</h3><p>Operação completa para autônomos e barbearias pequenas.</p></div>
+            <div class="price" data-monthly="69,90" data-annual="58,25"><small>R$</small><strong>69,90</strong><span>/mês</span></div><div class="annual-note" data-annual-note>R$ 699/ano</div>
+            <ul><li>Até 2 profissionais</li><li>Agenda e página pública</li><li>Clientes e serviços</li><li>Financeiro e gráficos</li><li>Produtos, estoque e PDV</li><li>Comandas e comissões</li></ul>
+            <a class="btn btn-ghost full" data-signup href="#">Começar grátis</a>
+          </article>
+          <article class="price-card featured">
+            <div class="badge">MAIS ESCOLHIDO</div>
+            <div class="price-head"><span>CRESCIMENTO</span><h3>Pro</h3><p>Para equipes que querem relacionamento, pagamentos e automação.</p></div>
+            <div class="price" data-monthly="119,90" data-annual="99,92"><small>R$</small><strong>119,90</strong><span>/mês</span></div><div class="annual-note" data-annual-note>R$ 1.199/ano</div>
+            <ul><li>Até 5 profissionais</li><li>Tudo do Starter</li><li>Equipe e permissões</li><li>Pagamentos online</li><li>WhatsApp e automações</li><li>CRM avançado</li><li>Fila, avaliações e fidelidade</li><li>Clube e marketing inteligente</li><li>Relatórios avançados</li></ul>
+            <a class="btn full" data-signup href="#">Testar o Pro</a>
+          </article>
+          <article class="price-card">
+            <div class="price-head"><span>IA + INTELIGÊNCIA</span><h3>Premium</h3><p>Para uma operação avançada com BI, personalização e inteligência.</p></div>
+            <div class="price" data-monthly="199,90" data-annual="166,58"><small>R$</small><strong>199,90</strong><span>/mês</span></div><div class="annual-note" data-annual-note>R$ 1.999/ano</div>
+            <ul><li>Até 10 profissionais</li><li>Tudo do Pro</li><li>Página pública personalizada</li><li>BI gerencial avançado</li><li>Exportação de dados</li><li>NFS-e preparada para integração</li><li>IA no WhatsApp quando ativada*</li></ul>
+            <a class="btn btn-ghost full" data-signup href="#">Conhecer Premium</a>
+          </article>
         </div>
+        <p class="pricing-footnote">* No Premium, a IA no WhatsApp depende da integração/configuração do recurso e possui franquia padrão prevista de até 500 atendimentos/mês quando ativada.</p>
       </div>
     </section>
 
     <section class="section faq" id="faq">
-      <div class="container split">
-        <div><span class="eyebrow dark">Dúvidas comuns</span><h2>Respostas rápidas para fechar a decisão.</h2><p>Use esta seção na página ou durante a apresentação para quebrar objeções.</p></div>
-        <div class="faq-list">
-          <details open><summary>Preciso trocar meu WhatsApp?</summary><p>Não necessariamente. A implantação define se será usado um número novo, um número de teste ou o número oficial da barbearia.</p></details>
-          <details><summary>O cliente consegue acompanhar o agendamento?</summary><p>Sim. Ele recebe um código e pode acompanhar pela página pública ou enviando ACOMPANHAR no WhatsApp.</p></details>
-          <details><summary>Funciona no celular?</summary><p>Sim. A interface foi pensada para uso no celular por recepção, barbeiro e gestor.</p></details>
-          <details><summary>Tem teste grátis?</summary><p>Sim. São 7 dias de Premium para experimentar os recursos antes de escolher o plano.</p></details>
+      <div class="container faq-grid">
+        <div class="section-copy reveal"><span class="eyebrow">Dúvidas comuns</span><h2>O que você precisa saber antes de começar.</h2><p>O teste Premium permite conhecer o fluxo completo antes de decidir qual plano manter.</p><a class="btn btn-ghost" data-signup href="#">Criar minha conta</a></div>
+        <div class="faq-list reveal delay-1">
+          <details open><summary>O EliteFlow funciona no celular?</summary><p>Sim. Agenda, clientes, serviços, pagamentos e os principais fluxos administrativos foram adaptados para uso em telas menores, além do desktop.</p></details>
+          <details><summary>Preciso trocar meu WhatsApp?</summary><p>Não existe uma única forma obrigatória. A área de automações suporta diferentes estratégias de conexão, incluindo Meta, 360dialog, Twilio e Evolution, conforme a configuração da barbearia.</p></details>
+          <details><summary>O WhatsApp respeita o horário de almoço do barbeiro?</summary><p>Sim. A disponibilidade usa o expediente configurado por profissional e por dia, incluindo o intervalo de almoço, e o horário é revalidado quando o cliente escolhe.</p></details>
+          <details><summary>Como funciona o Pix manual?</summary><p>A reserva fica aguardando confirmação. A equipe autorizada confirma o recebimento no painel e o sistema cria o agendamento e envia a confirmação ao cliente.</p></details>
+          <details><summary>Tem pagamento por cartão?</summary><p>Sim. O cartão utiliza o checkout oficial do Mercado Pago; o EliteFlow não coleta os dados do cartão diretamente.</p></details>
+          <details><summary>Minha equipe inteira vê tudo?</summary><p>Não. O sistema possui perfis como dono, gerente, recepção e barbeiro, com acesso adequado ao trabalho de cada função.</p></details>
+          <details><summary>Tem teste grátis?</summary><p>Sim. Após confirmar o e-mail, a conta inicia 7 dias de Premium para você experimentar os recursos antes de escolher um plano.</p></details>
+          <details><summary>Posso usar modo claro ou escuro?</summary><p>Sim. O painel oferece modos Claro, Escuro e Sistema, e a preferência fica salva no navegador do usuário.</p></details>
         </div>
       </div>
     </section>
 
     <section class="section final-cta">
-      <div class="container center">
-        <h2>Quer ver o BarberFlow agendando um cliente pelo WhatsApp ao vivo?</h2>
-        <p>Agende uma demonstração e veja o fluxo completo: WhatsApp, agenda, código do cliente, comanda e pagamento.</p>
-        <a class="btn" data-whatsapp href="#">Falar no WhatsApp agora</a>
+      <div class="final-glow"></div>
+      <div class="container final-inner reveal">
+        <span class="eyebrow">Seu próximo cliente pode agendar sozinho</span>
+        <h2>Coloque sua barbearia no fluxo certo.</h2>
+        <p>Crie sua conta, teste o Premium por 7 dias e veja agenda, WhatsApp, pagamentos, clientes e financeiro trabalhando juntos.</p>
+        <div class="hero-actions center-actions"><a class="btn btn-large" data-signup href="#">Começar 7 dias grátis <span>→</span></a><a class="btn btn-ghost btn-large" href="#recursos">Rever recursos</a></div>
+        <small>Sem cartão para iniciar o teste.</small>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="container footer-grid">
-      <div class="brand"><span class="brand-mark">BF</span><span>Barber<span>Flow</span></span></div>
-      <p>© 2026 BarberFlow. Sistema de gestão e atendimento para barbearias.</p>
-      <a href="#topo">Voltar ao topo</a>
+    <div class="container footer-main">
+      <div><a class="brand" href="#topo"><img src="assets/eliteflow.svg" alt="" /><span>Elite<span>Flow</span></span></a><p>Gestão inteligente para barbearias.</p></div>
+      <div class="footer-links"><a href="#como-funciona">Como funciona</a><a href="#recursos">Recursos</a><a href="#planos">Planos</a><a href="#faq">Dúvidas</a></div>
+      <a class="btn btn-small" data-signup href="#">Começar grátis</a>
     </div>
+    <div class="container footer-bottom"><span>© 2026 EliteFlow: Gestão de Barbearia.</span><span>Agenda • WhatsApp • Gestão • Crescimento</span></div>
   </footer>
 
+  <div class="mobile-cta"><a class="btn full" data-signup href="#">Começar 7 dias grátis</a></div>
   <script src="js/main.js"></script>
 </body>
 </html>
