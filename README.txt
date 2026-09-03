@@ -1,47 +1,30 @@
-EliteFlow — Página de Vendas 4.5.4 Mobile Optimized
+EliteFlow — Página de Vendas Mobile FIX V3
 
-Arquivos:
-- index.html
-- css/styles.css
-- js/main.js
-- assets/eliteflow.svg
-- favicon.ico
+FOCO DESTA VERSÃO
+Correção específica para navegadores internos/WebViews (Linktree, Instagram e Facebook), além de navegadores mobile normais.
 
-PUBLICAÇÃO NO NETLIFY
-Envie esta pasta/ZIP como site estático. O index.html está na raiz.
+CORREÇÕES
+- A viewport mobile não é mais a área de rolagem.
+- A página fica presa à tela e .page-shell faz somente rolagem vertical.
+- Body/html não podem ser arrastados horizontalmente.
+- Remove overscroll horizontal que revelava área preta/vazia.
+- Elementos decorativos que extrapolam a tela continuam desativados no mobile.
+- Faixa de benefícios deixa de usar rolagem horizontal no celular.
+- Navegação por âncoras foi adaptada ao novo contêiner de rolagem.
+- CSS e JS receberam nomes novos para evitar cache antigo de WebViews.
+- _headers força o index.html a não ficar preso em cache no Netlify.
+
+ARQUIVOS VERSIONADOS
+- css/styles-mobile-v3.css?v=3
+- js/main-mobile-v3.js?v=3
+
+IMPORTANTE APÓS O DEPLOY
+Se o Linktree ainda abrir uma cópia antiga, altere o URL cadastrado nele adicionando ao final:
+?v=3
+Exemplo:
+https://SEU-SITE.netlify.app/?v=3
+Isso cria uma URL nova para o navegador interno e evita reaproveitar a página antiga em cache.
 
 LINK DE CADASTRO
-O CTA está configurado em js/main.js:
-const SIGNUP_URL = 'https://barberflow-saas.onrender.com/cadastro.html';
-Troque somente essa constante quando o domínio oficial do EliteFlow mudar.
-
-OTIMIZAÇÃO MOBILE APLICADA
-- Navegação mobile mais compacta e acessível
-- Hero ajustado para telas pequenas
-- Mockup do dashboard recomposto para 360–420 px
-- Botões e CTAs em largura adequada no celular
-- Faixa de benefícios sem rolagem horizontal
-- Fluxo de funcionamento adaptado para mobile
-- Slider de recursos sem alturas fixas excessivas
-- Telas internas do slider responsivas
-- Cards, CRM, agenda, pagamentos, BI e temas ajustados
-- Segurança, perfis e planos reorganizados no celular
-- Footer e CTA fixo ajustados para safe-area
-- Breakpoints extras para 420 px e 360 px
-- Proteções adicionais contra overflow horizontal
-
-CONTEÚDO ATUAL
-- EliteFlow
-- Planos: Starter 69,90 / Pro 119,90 / Premium 199,90
-- Anual: 699 / 1.199 / 1.999
-- Trial Premium 7 dias
-- WhatsApp e fluxos configuráveis
-- Meta / 360dialog / Twilio / Evolution
-- Intervalo de almoço por barbeiro
-- Pix manual + Mercado Pago
-- CRM / marketing / fidelidade / clube
-- Agenda / página pública / acompanhamento
-- Comandas / PDV / estoque / comissões
-- Financeiro / BI / metas
-- Equipe / permissões / 2FA
-- Modos Claro / Escuro / Sistema
+O CTA continua apontando para:
+https://barberflow-saas.onrender.com/cadastro.html
