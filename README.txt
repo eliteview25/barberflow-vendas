@@ -1,4 +1,4 @@
-EliteFlow — Página de Vendas 4.5.4
+EliteFlow — Página de Vendas 4.5.4 Mobile Optimized
 
 Arquivos:
 - index.html
@@ -15,9 +15,24 @@ O CTA está configurado em js/main.js:
 const SIGNUP_URL = 'https://barberflow-saas.onrender.com/cadastro.html';
 Troque somente essa constante quando o domínio oficial do EliteFlow mudar.
 
-CONTEÚDO ATUALIZADO
-- EliteFlow (novo nome)
-- Planos atuais: Starter 69,90 / Pro 119,90 / Premium 199,90
+OTIMIZAÇÃO MOBILE APLICADA
+- Navegação mobile mais compacta e acessível
+- Hero ajustado para telas pequenas
+- Mockup do dashboard recomposto para 360–420 px
+- Botões e CTAs em largura adequada no celular
+- Faixa de benefícios sem rolagem horizontal
+- Fluxo de funcionamento adaptado para mobile
+- Slider de recursos sem alturas fixas excessivas
+- Telas internas do slider responsivas
+- Cards, CRM, agenda, pagamentos, BI e temas ajustados
+- Segurança, perfis e planos reorganizados no celular
+- Footer e CTA fixo ajustados para safe-area
+- Breakpoints extras para 420 px e 360 px
+- Proteções adicionais contra overflow horizontal
+
+CONTEÚDO ATUAL
+- EliteFlow
+- Planos: Starter 69,90 / Pro 119,90 / Premium 199,90
 - Anual: 699 / 1.199 / 1.999
 - Trial Premium 7 dias
 - WhatsApp e fluxos configuráveis
@@ -30,4 +45,3 @@ CONTEÚDO ATUALIZADO
 - Financeiro / BI / metas
 - Equipe / permissões / 2FA
 - Modos Claro / Escuro / Sistema
-- Responsividade mobile e desktop
