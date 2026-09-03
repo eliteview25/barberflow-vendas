@@ -28,3 +28,6 @@ Isso cria uma URL nova para o navegador interno e evita reaproveitar a página a
 LINK DE CADASTRO
 O CTA continua apontando para:
 https://barberflow-saas.onrender.com/cadastro.html
+
+
+V4: CTA móvel de 7 dias movido para fora do contêiner rolável para permanecer fixo no rodapé em Linktree/Instagram WebView.
