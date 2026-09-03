@@ -230,3 +230,119 @@
   .slider-dots button{width:9px}.slider-dots button.active{width:15px}
   .role-tabs{grid-template-columns:1fr}
 }
+
+/* =========================================================
+   MOBILE HARDENING — elimina deslocamento/overscroll lateral
+   ========================================================= */
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
+  overscroll-behavior-x: none;
+}
+
+html {
+  background: var(--bg);
+}
+
+body {
+  position: relative;
+  min-width: 0;
+  touch-action: pan-y;
+}
+
+main,
+.site-header,
+.footer,
+section {
+  width: 100%;
+  max-width: 100%;
+}
+
+main,
+section {
+  overflow-x: clip;
+}
+
+img,
+svg,
+video,
+canvas {
+  max-width: 100%;
+}
+
+.container,
+.hero-grid,
+.hero-copy,
+.hero-visual,
+.product-slider,
+.slides,
+.slide,
+.screen,
+.pricing-grid,
+.price-card,
+.security-wrap,
+.role-panel,
+.faq-grid {
+  min-width: 0;
+}
+
+/* O carrossel recebe o gesto horizontal via JS, sem mover a página. */
+.product-slider {
+  touch-action: pan-y;
+  overscroll-behavior-x: contain;
+}
+
+@media (max-width: 640px) {
+  /* Elementos puramente decorativos que extrapolam a viewport em alguns
+     WebViews/Safari mobile são removidos no celular. */
+  .hero-glow,
+  .visual-orbit {
+    display: none !important;
+  }
+
+  .hero,
+  .hero-grid,
+  .hero-visual,
+  .slider-section,
+  .product-slider,
+  .role-section,
+  .security-section,
+  .pricing,
+  .faq,
+  .final-cta,
+  .footer {
+    max-width: 100%;
+    overflow-x: clip;
+  }
+
+  .dashboard-window {
+    left: 0;
+    right: auto;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .phone-card {
+    max-width: calc(100% - 16px);
+  }
+
+  .floating-chip {
+    max-width: calc(100% - 16px);
+  }
+
+  .nav-links {
+    max-width: calc(100% - 40px);
+  }
+}
+
+/* Fallback para navegadores sem suporte a overflow: clip. */
+@supports not (overflow: clip) {
+  html,
+  body,
+  main,
+  section {
+    overflow-x: hidden;
+  }
+}

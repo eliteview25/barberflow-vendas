@@ -1,6 +1,13 @@
 (() => {
   'use strict';
 
+  // Mantém a viewport presa no eixo X em navegadores/WebViews mobile.
+  const lockHorizontalViewport = () => {
+    if (window.scrollX !== 0) window.scrollTo(0, window.scrollY);
+  };
+  addEventListener('scroll', lockHorizontalViewport, { passive: true });
+
+
   // Troque somente esta URL caso o cadastro do SaaS mude de domínio.
   const SIGNUP_URL = 'https://barberflow-saas.onrender.com/cadastro.html';
 
